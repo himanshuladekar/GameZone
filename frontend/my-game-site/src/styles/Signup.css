@@ -1,0 +1,105 @@
+/* Modern Signup Form Styling */
+
+.signup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    font-family: 'Segoe UI', 'Roboto', sans-serif;
+  }
+  
+  .signup form {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .signup form:hover {
+    transform: translateY(-5px);
+  }
+  
+  .signup form h2 {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+  }
+  
+  .signup form p {
+    margin: 0 0 1.5rem;
+    font-size: 16px;
+    color: #666;
+  }
+  
+  .signup form input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    margin-bottom: 1.25rem;
+    border: 2px solid #e1e1e1;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .signup form input:focus {
+    border-color: #667eea;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.25);
+  }
+  
+  .signup form button {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .signup form button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .signup form button:active {
+    transform: translateY(0);
+  }
+  
+  .signup form p[style] {
+    margin: 1rem 0;
+    font-weight: bold;
+    color: #4a5568;
+  }
+  
+  @media (max-width: 768px) {
+    .signup form {
+      padding: 2rem;
+      margin: 1rem;
+    }
+  
+    .signup form h2 {
+      font-size: 24px;
+    }
+  }
+  
+  /* Add smooth animation for form inputs */
+  @keyframes input-focus {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.02); }
+    100% { transform: scale(1); }
+  }
+  
+  .signup form input:focus {
+    animation: input-focus 0.3s ease-in-out;
+  }
+  
+  

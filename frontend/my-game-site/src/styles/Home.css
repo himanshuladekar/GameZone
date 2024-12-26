@@ -1,0 +1,58 @@
+/* Home.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #85add4;
+  }
+  *{
+    font-style: normal;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #007bff;
+    padding: 10px 20px;
+    color: white;
+  }
+  
+  .navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .navbar .auth-links a {
+    margin-left: 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  .navbar .auth-links a:hover {
+    text-decoration: underline;
+  }
+  
+  main {
+    text-align: center;
+    padding: 50px;
+  }
+  
+  main h1 {
+    font-size: 36px;
+    color: #333;
+  }
+  main .img-container {
+    display: flex; /* Use flexbox to arrange images side by side */
+    justify-content: center;
+    gap: 100px; /* Space between images */
+    margin-top: 20px;
+  }
+  
+  main img {
+    max-width: 300px; /* Limit the width of each image */
+    height: auto; /* Maintain aspect ratio */
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
